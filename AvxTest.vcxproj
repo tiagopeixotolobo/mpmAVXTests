@@ -24,6 +24,7 @@
     <ProjectGuid>{558c6723-7122-4f7f-a0d7-144aaf47aa33}</ProjectGuid>
     <RootNamespace>AvxTest</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>mpmReduced</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -59,9 +60,11 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet1.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet1.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -131,6 +134,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -141,19 +146,45 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="MPMparticle.cpp" />
-    <ClCompile Include="mpm_body.cpp" />
-    <ClCompile Include="mpm_mesh.cpp" />
-    <ClCompile Include="mpm_meshelement.cpp" />
-    <ClCompile Include="mpm_node.cpp" />
+    <Natvis Include="..\..\MPMc\cmake\vs2017_resources\eigen.natvis" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="engine.h" />
+    <ClInclude Include="meshElementL2.h" />
+    <ClInclude Include="meshElementQ4.h" />
+    <ClInclude Include="meshElementQ4General.h" />
+    <ClInclude Include="meshElementQ4GIMP.h" />
+    <ClInclude Include="meshElementQ4Traditional.h" />
+    <ClInclude Include="meshElementT3.h" />
     <ClInclude Include="MPMparticle.h" />
     <ClInclude Include="mpm_body.h" />
+    <ClInclude Include="mpm_data.h" />
+    <ClInclude Include="mpm_globals.h" />
+    <ClInclude Include="mpm_mappingMesh.h" />
     <ClInclude Include="mpm_mesh.h" />
     <ClInclude Include="mpm_meshelement.h" />
+    <ClInclude Include="mpm_meshGeneral.h" />
+    <ClInclude Include="mpm_meshRegularQ4.h" />
     <ClInclude Include="mpm_node.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="engine.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="meshElementL2.cpp" />
+    <ClCompile Include="meshElementQ4.cpp" />
+    <ClCompile Include="meshElementQ4General.cpp" />
+    <ClCompile Include="meshElementQ4GIMP.cpp" />
+    <ClCompile Include="meshElementQ4Traditional.cpp" />
+    <ClCompile Include="meshElementT3.cpp" />
+    <ClCompile Include="MPMparticle.cpp" />
+    <ClCompile Include="mpm_body.cpp" />
+    <ClCompile Include="mpm_data.cpp" />
+    <ClCompile Include="mpm_mappingMesh.cpp" />
+    <ClCompile Include="mpm_mesh.cpp" />
+    <ClCompile Include="mpm_meshelement.cpp" />
+    <ClCompile Include="mpm_meshGeneral.cpp" />
+    <ClCompile Include="mpm_meshRegularQ4.cpp" />
+    <ClCompile Include="mpm_node.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

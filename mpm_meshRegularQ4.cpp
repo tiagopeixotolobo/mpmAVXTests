@@ -1,4 +1,4 @@
-#include "meshes/mpm_meshRegularQ4.h"
+#include "mpm_meshRegularQ4.h"
 #include <iostream>
 
 using namespace mpm;

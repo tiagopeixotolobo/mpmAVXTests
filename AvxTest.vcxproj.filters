@@ -15,16 +15,93 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <Natvis Include="..\..\MPMc\cmake\vs2017_resources\eigen.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="meshElementL2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="meshElementQ4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="meshElementQ4General.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="meshElementQ4GIMP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="meshElementQ4Traditional.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="meshElementT3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mpm_body.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mpm_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mpm_globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mpm_mappingMesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mpm_mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mpm_meshelement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mpm_meshGeneral.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mpm_meshRegularQ4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mpm_node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MPMparticle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="engine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MPMparticle.cpp">
+    <ClCompile Include="meshElementL2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mpm_node.cpp">
+    <ClCompile Include="meshElementQ4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="meshElementQ4General.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="meshElementQ4GIMP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="meshElementQ4Traditional.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="meshElementT3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="mpm_body.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mpm_data.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mpm_mappingMesh.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="mpm_mesh.cpp">
@@ -33,22 +110,17 @@
     <ClCompile Include="mpm_meshelement.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="MPMparticle.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="mpm_body.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="mpm_mesh.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="mpm_node.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="mpm_meshelement.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClCompile Include="mpm_meshGeneral.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mpm_meshRegularQ4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mpm_node.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MPMparticle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

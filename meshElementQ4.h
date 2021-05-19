@@ -1,6 +1,7 @@
 #pragma once
 #include "mpm_meshelement.h"
 #include "mpm_globals.h"
+#include <immintrin.h>
 
 class meshElementQ4 : public meshElement
 {

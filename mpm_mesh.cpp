@@ -93,10 +93,10 @@ void mpmMesh::addElemQ4Traditional(int idElem, int nodes[4]) {
     for (int i = 0; i < body.size(); i++) {
         meshElementQ4Traditional *elem = new meshElementQ4Traditional(idElem);
 
-        elem->nodes.push_back(body[i]->nodes[nodes[0] - 1]);
-        elem->nodes.push_back(body[i]->nodes[nodes[1] - 1]);
-        elem->nodes.push_back(body[i]->nodes[nodes[2] - 1]);
-        elem->nodes.push_back(body[i]->nodes[nodes[3] - 1]);
+        elem->nodes.push_back(body[i]->nodes[nodes[0]]);
+        elem->nodes.push_back(body[i]->nodes[nodes[1]]);
+        elem->nodes.push_back(body[i]->nodes[nodes[2]]);
+        elem->nodes.push_back(body[i]->nodes[nodes[3]]);
 
         if (i == 0)
             elem->computeLimits();
